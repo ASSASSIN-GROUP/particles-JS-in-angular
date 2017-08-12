@@ -1,0 +1,45 @@
+{
+  "name": "angular-particles",
+  "version": "0.0.2-0",
+  "description": "Angular wrapper over particles.js",
+  "main": "lib/bundle.js",
+  "repository": "https://https://github.com/alexandra1030/particles-JS-in-angular.git",
+  "scripts": {
+    "test": "karma start karma.config.js",
+    "build-dev": "webpack",
+    "build-prod": "webpack --production",
+    "build": "npm run-script build-dev && npm run-script build-prod",
+    "server": "webpack-dev-server"
+  },
+  "keywords": [
+    "particles",
+    "canvas",
+    "webpack",
+    "angular"
+  ],
+  "author": "Alexandra Petrov",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.5.5",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "isparta-loader": "^2.0.0",
+    "jasmine-core": "^2.4.1",
+    "jshint": "^2.9.2",
+    "jshint-loader": "^0.8.3",
+    "karma": "^0.13.22",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.7.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "particles.js": "^2.0.0"
+  }
+}

@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\particles\particles.service.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">src/particles/</a> particles.service.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.53% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>54/59</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">72.22% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>13/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">91.53% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>54/59</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">72×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var particlesService = function (particlesModule) {
+  'use strict';
+&nbsp;
+  particlesModule.factory('ParticlesService', ['$window', function ($window) {
+    var makeId = function (useNumbers) {
+      var text = '';
+      var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      if (useNumbers) {
+        possible += '1234567890';
+      }
+      for (var i = 0; i &lt; 6; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+      }
+      return text;
+    };
+&nbsp;
+    var getInstanceIndex = function (elementId) {
+      for (var i = 0, l = $window.pJSDom.length; i &lt; l; i++) {
+        <span class="missing-if-branch" title="else path not taken" >E</span>if ($window.pJSDom[i].pJS.canvas.el.parentNode.id === elementId) {
+          return i;
+        } else {
+<span class="cstat-no" title="statement not covered" >          c</span>ontinue;
+        }
+      }
+<span class="cstat-no" title="statement not covered" >      r</span>eturn -1;
+    };
+&nbsp;
+    var getPJSInstance = function (instanceIndex) {
+      return $window.pJSDom[instanceIndex].pJS;
+    };
+&nbsp;
+    var updateElBackground = function (PJS) {
+      var pJSInstance = PJS.instance;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!pJSInstance) {
+<span class="cstat-no" title="statement not covered" >        r</span>eturn;
+      }
+      var canvasParent = pJSInstance.canvas.el.parentNode;
+      canvasParent.style.background = null;
+      canvasParent.style.backgroundImage = pJSInstance.background.image ? 'url("' + pJSInstance.background.image + '")' : 'none';
+      canvasParent.style.backgroundColor = pJSInstance.background.color ? pJSInstance.background.color : 'transparent';
+    };
+&nbsp;
+    var updatePJSInstance = function (PJS, newValue) {
+      var pJSInstance = PJS.instance;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!pJSInstance) {
+<span class="cstat-no" title="statement not covered" >        r</span>eturn;
+      }
+&nbsp;
+      pJSInstance.background = pJSInstance.background || {
+        color: '#272727',
+        image: ''
+      };
+&nbsp;
+      angular.merge(pJSInstance.background, newValue.background);
+      angular.merge(pJSInstance.interactivity, newValue.interactivity);
+      angular.merge(pJSInstance.particles, newValue.particles);
+&nbsp;
+      //Individual tmp object properties
+      pJSInstance.tmp.obj.size_value = pJSInstance.particles.size.value;
+      pJSInstance.tmp.obj.size_anim_speed = pJSInstance.particles.size.anim.speed;
+      pJSInstance.tmp.obj.line_linked_distance = pJSInstance.particles.line_linked.distance;
+      pJSInstance.tmp.obj.line_linked_width = pJSInstance.particles.line_linked.width;
+      pJSInstance.tmp.obj.move_speed = pJSInstance.particles.move.speed;
+      pJSInstance.tmp.obj.mode_grab_distance = pJSInstance.interactivity.modes.grab.distance;
+      pJSInstance.tmp.obj.mode_bubble_distance = pJSInstance.interactivity.modes.bubble.distance;
+      pJSInstance.tmp.obj.mode_bubble_size = pJSInstance.interactivity.modes.bubble.size;
+      pJSInstance.tmp.obj.mode_repulse_distance = pJSInstance.interactivity.modes.repulse.distance;
+      updateElBackground(PJS);
+      pJSInstance.fn.particlesRefresh();
+    };
+&nbsp;
+    var destroyPJSInstance = function (PJS) {
+      var pJSInstance = PJS.instance;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!pJSInstance) {
+<span class="cstat-no" title="statement not covered" >        r</span>eturn;
+      }
+      $window.cancelAnimationFrame(pJSInstance.fn.drawAnimFrame);
+      //remove background styles
+      var canvasParent = pJSInstance.canvas.el.parentNode;
+      canvasParent.style.background = null;
+      canvasParent.style.backgroundImage = null;
+      canvasParent.style.backgroundColor = null;
+&nbsp;
+      //remove the canvas element;
+      pJSInstance.canvas.el.remove();
+&nbsp;
+      //Remove instance from the $window object
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (PJS.index &gt; -1) {
+        $window.pJSDom.splice(PJS.index, 1);
+      }
+    };
+&nbsp;
+    return {
+      uid: makeId,
+      getPJSInstance: getPJSInstance,
+      getPJSIndex: getInstanceIndex,
+      destroyPJS: destroyPJSInstance,
+      updatePJS: updatePJSInstance,
+      updatePJSBackground: updateElBackground
+    };
+  }]);
+};
+&nbsp;
+module.exports = particlesService;
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Aug 12 2017 10:55:03 GMT+0200 (Central European Daylight Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
